@@ -203,7 +203,7 @@ var bn='০১২৩৪৫৬৭৮৯';function B(n){return String(n).replace(/
 var name='';
 try{var h=location.hash.slice(1);if(h&&/^[\w~.%-]+$/.test(h)){name=decodeURIComponent(h).replace(/[_]/g,' ');$('gn').textContent=name;$('gn2').textContent=name;$('guest').style.display='block'}}catch(e){}
 /* ====== EDIT THESE: 3 hosts (name + number in international format, digits only) ====== */
-var HOSTS=[{bn:'আবতাহি · বরের ভাই',en:'Abtahi · Groom’s brother',ph:'8801404802902',sh:'01404-802902'},{bn:'মুকুল · বরের মামা',en:'Mukul · Groom’s maternal uncle',ph:'8801921231111',sh:'01921-231111'}];
+var HOSTS=[{bn:'আবতাহী · বরের ভাই',en:'Abtahi · Groom’s brother',ph:'8801404802902',sh:'01404-802902'},{bn:'মুকুল · বরের মামা',en:'Mukul · Groom’s maternal uncle',ph:'8801921231111',sh:'01921-231111'}];
 /* ================================================================================== */
 (function(){var hh='';HOSTS.forEach(function(x){var t='আসসালামু আলাইকুম, '+(name?'আমি '+name+'। ':'')+'বিবাহ সংবর্ধনার ভেন্যু খুঁজে পেতে সাহায্য দরকার।\n(Assalamu alaikum, I need help finding the wedding reception venue.)';hh+='<div class="h"><div style="font-size:16px;font-weight:500">'+x.bn+'</div><div class="en">'+x.en+' · '+x.sh+'</div><div class="hb"><a class="b call" href="tel:+'+x.ph+'">কল · Call</a><a class="b wa" target="_blank" rel="noopener" href="https://wa.me/'+x.ph+'?text='+encodeURIComponent(t)+'">WhatsApp</a></div></div>'});$('hosts').innerHTML=hh})();
 var T=Date.UTC(2026,11,18,7,0),END=Date.UTC(2026,11,18,11,0);
